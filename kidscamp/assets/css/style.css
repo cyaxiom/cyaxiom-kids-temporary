@@ -2206,6 +2206,7 @@
 .default-form .form-group input[type="password"],
 .default-form .form-group input[type="tel"],
 .default-form .form-group input[type="email"],
+.default-form .form-group input[type="date"],
 .default-form .form-group select {
   position: relative;
   display: block;

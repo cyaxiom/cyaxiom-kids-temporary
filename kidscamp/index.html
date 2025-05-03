@@ -49,7 +49,7 @@
 						<div class="nav-outer d-flex align-items-center flex-wrap">
 							<!-- Logo Box -->
 							<div class="logo-box">
-								<div class="logo"><a href="index.html">
+								<div class="logo"><a href="./index.html">
 									<img src="assets/CyaxiomLogo/CyaxiomWBLogo/WBLogo.png" alt="" title="kidscamp">
 								</a></div>
 							</div>
@@ -71,10 +71,10 @@
 										<li class="dropdown"><a href="#">Pages</a>
 											<ul>
 												<li><a href="faq.html">Faq</a></li>
-												<li><a href="login.html">Login</a></li>
+												<!-- <li><a href="login.html">Login</a></li> -->
 												<li><a href="register.html">Register</a></li>
 												<li><a href="gallery.html">Galery</a></li>
-												<li><a href="reset-password.html">Forgot password</a></li>
+												<!-- <li><a href="reset-password.html">Forgot password</a></li> -->
 												<li><a href="testimonial.html">Testimonial</a></li>
 												<!-- <li class="dropdown"><a href="#">Team</a>
 													<ul>
@@ -211,10 +211,10 @@
 									  Kids learn to build real websites while having fun with code! Our bootcamp combines creativity, problem-solving, and hands-on projects designed just for young learners.
 									</div>
 									<div class="slider-one_button d-flex align-items-center flex-wrap">
-									  <a href="classes.html" class="theme-btn btn-style-one">
+									  <a href="./register.html" class="theme-btn btn-style-one">
 										<span class="btn-wrap">
-										  <span class="text-one">Book Now <i class="flaticon-next-1"></i></span>
-										  <span class="text-two">Book Now <i class="flaticon-next-1"></i></span>
+										  <span class="text-one">Register now <i class="flaticon-next-1"></i></span>
+										  <span class="text-two">Register now <i class="flaticon-next-1"></i></span>
 										</span>
 									  </a>
 									  <div class="slider-one_seats">
@@ -263,10 +263,10 @@
 									  Our interactive bootcamp introduces kids to real coding skills through exciting website projects. It's learning with purpose — and lots of creativity!
 									</div>
 									<div class="slider-one_button d-flex align-items-center flex-wrap">
-									  <a href="classes.html" class="theme-btn btn-style-one">
+									  <a href="./register.html" class="theme-btn btn-style-one">
 										<span class="btn-wrap">
-										  <span class="text-one">Book Now <i class="flaticon-next-1"></i></span>
-										  <span class="text-two">Book Now <i class="flaticon-next-1"></i></span>
+										  <span class="text-one">Register now <i class="flaticon-next-1"></i></span>
+										  <span class="text-two">Register now <i class="flaticon-next-1"></i></span>
 										</span>
 									  </a>
 									  <div class="slider-one_seats">
@@ -499,74 +499,108 @@
 	  
 			<!-- Form Column -->
 			<div class="registration-one_form-column col-lg-6 col-md-12 col-sm-12">
-			  <div class="registration-one_form-outer">
-				<h3 class="registration-one_title">Bootcamp Registration Form</h3>
-	  
-				<!-- Default Form -->
-				<div class="default-form">
-				  <form method="post" action="blog.html">
-					<div class="row clearfix">
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Child's Full Name</label>
-						<input type="text" name="firstname" required="">
-					  </div>
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Guardian Name</label>
-						<input type="text" name="lastname" required="">
-					  </div>
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Email Address</label>
-						<input type="email" name="email" required="">
-					  </div>
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Phone Number</label>
-						<input type="text" name="phone" required="">
-					  </div>
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Child's Age</label>
-						<select name="age" class="custom-select-box">
-						  <option>8 - 10</option>
-						  <option>11 - 13</option>
-						  <option>14 - 16</option>
-						  <option>17 - 18</option>
-						</select>
-					  </div>
-	  
-					  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-						<label>Medical Conditions/Allergies</label>
-						<select name="medical" class="custom-select-box">
-						  <option>No</option>
-						  <option>Yes</option>
-						</select>
-					  </div>
-	  
-					  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-						<label>Additional Notes</label>
-						<textarea name="message" placeholder="Any special needs, preferences, or fun facts about your child?"></textarea>
-					  </div>
-	  
-					  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-						<!-- Button Box -->
-						<button type="submit" class="theme-btn btn-style-two">
-						  <span class="btn-wrap">
-							<span class="text-one">Submit Now <i class="flaticon-next-1"></i></span>
-							<span class="text-two">Submit Now <i class="flaticon-next-1"></i></span>
-						  </span>
-						</button>
-					  </div>
-	  
-					</div>
-				  </form>
-				</div>
-				<!-- End Default Form -->
-	  
-			  </div>
+  <div class="registration-one_form-outer">
+    <h3 class="registration-one_title">Bootcamp Registration Form</h3>
+
+    <!-- Default Form -->
+	<div class="default-form">
+		<form id="bootcampForm">
+		  <div class="row clearfix">
+	
+			<!-- Parent Information -->
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Guardian Full Name</label>
+			  <input type="text" name="parent_full_name" required />
 			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Guardian Email</label>
+			  <input type="email" name="parent_email" required />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Guardian Phone</label>
+			  <input type="text" name="parent_phone" required />
+			</div>
+	
+			<!-- Child Information -->
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Child's Full Name</label>
+			  <input type="text" name="child_name" required />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Child's Gender</label>
+			  <select name="child_gender" class="custom-select-box" required>
+				<option value="">Select</option>
+				<option>Male</option>
+				<option>Female</option>
+				<option>Other</option>
+			  </select>
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Birth Date</label>
+			  <input type="date" name="birth_date" required />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Grade</label>
+			  <input type="text" name="grade" required />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Child's Email</label>
+			  <input type="email" name="child_email" />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Street Address</label>
+			  <input type="text" name="address" required />
+			</div>
+	
+			<div class="col-lg-4 col-md-4 col-sm-12 form-group">
+			  <label>City</label>
+			  <input type="text" name="city" required />
+			</div>
+	
+			<div class="col-lg-4 col-md-4 col-sm-12 form-group">
+			  <label>State</label>
+			  <input type="text" name="state" required />
+			</div>
+	
+			<div class="col-lg-4 col-md-4 col-sm-12 form-group">
+			  <label>Zip Code</label>
+			  <input type="text" name="zip_code" required />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Special Case</label>
+			  <input type="text" name="special_case" placeholder="e.g., allergies, conditions" />
+			</div>
+	
+			<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+			  <label>Schedule Availability</label>
+			  <input type="text" name="schedule_availability" placeholder="e.g., Weekends only" />
+			</div>
+	
+			<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+			  <button type="button" class="theme-btn btn-style-two" onclick="submitBootcampForm()">
+				<span class="btn-wrap">
+				  <span class="text-one">Submit Now <i class="flaticon-next-1"></i></span>
+				  <span class="text-two">Submit Now <i class="flaticon-next-1"></i></span>
+				</span>
+			  </button>
+			</div>
+	
+		  </div>
+		</form>
+	  </div>
+    <!-- End Default Form -->
+
+  </div>
+</div>
+
 	  
 		  </div>
 		</div>
@@ -680,7 +714,7 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="login.html">Login</a></li>
+						<!-- <li><a href="login.html">Login</a></li> -->
 						<li><a href="register.html">Register</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
 						<!-- <li><a href="team.html">Team</a></li> -->
@@ -779,6 +813,10 @@
 <script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/jquery.countdown.js"></script>
 <script src="assets/js/script.js"></script>
+
+<!-- api request script -->
+<script src="./assets/js/api.js"></script>
+
 
 </body>
 </html>
