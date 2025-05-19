@@ -32,7 +32,7 @@ function submitBootcampForm() {
   }
 
   if (!emailRegex.test(parentEmail)) {
-    alert("Please enter a valid Guardian Email (e.g., abcd@gmail.com).");
+    alert("Please enter a valid Guardian Email (e.g., abcd@example.com).");
     form.parent_email.focus();
     return;
   }
@@ -78,7 +78,7 @@ function submitBootcampForm() {
       return response.json();
     })
     .then((result) => {
-      alert("Form submitted successfully!");
+      alert("Your submission has been successful. We’ll notify you soon!");
       form.reset();
     })
     .catch((error) => {

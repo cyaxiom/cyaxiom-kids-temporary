@@ -307,7 +307,6 @@
                   <option value="">Select</option>
                   <option>Male</option>
                   <option>Female</option>
-                  <option>Other</option>
                   </select>
                 </div>
             
@@ -323,7 +322,12 @@
             
                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                   <label>Child's Email</label>
-                  <input type="email" name="child_email" />
+                  <input
+                      type="email"
+                      name="child_email"
+                      placeholder="Optional"
+                      style="::placeholder { filter: blur(0.5px); opacity: 0.8; }"
+                    />
                 </div>
             
                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -331,17 +335,17 @@
                   <input type="text" name="address" required />
                 </div>
             
-                <div class="col-lg-4 col-md-4 col-sm-12 form-group">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                   <label>City</label>
                   <input type="text" name="city" required />
                 </div>
             
-                <div class="col-lg-4 col-md-4 col-sm-12 form-group">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                   <label>State</label>
                   <input type="text" name="state" required />
                 </div>
             
-                <div class="col-lg-4 col-md-4 col-sm-12 form-group">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                   <label>Zip Code</label>
                   <input type="text" name="zip_code" required />
                 </div>
